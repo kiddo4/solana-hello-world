@@ -220,7 +220,7 @@ export async function reportGreetings(): Promise<void> {
   if (accountInfo === null) {
     throw 'Error: cannot find the greeted account';
   }
-  const greeting = borsh.deserialize(
+  const greeting = borsh.deserialize( 
     GreetingSchema,
     GreetingAccount,
     accountInfo.data,
