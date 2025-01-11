@@ -343,6 +343,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "borsh"
+version = "1.5.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "2506947f73ad44e344215ccd6403ac2ae18cd8e046e581a441bf8d199f257f03"
+dependencies = [
+ "cfg_aliases",
+]
+
+[[package]]
 name = "borsh-derive"
 version = "0.9.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -534,6 +543,12 @@ name = "cfg-if"
 version = "1.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "baf1de4339761588bc0619e3cbc0120ee582ebb74b53b4efbf79117bd2da40fd"
+
+[[package]]
+name = "cfg_aliases"
+version = "0.2.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "613afe47fcd5fac7ccf1db93babcb082c5994d996f20b8b159f2ad1658eb5724"
 
 [[package]]
 name = "chrono"
@@ -3269,7 +3284,7 @@ version = "1.10.41"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "f461892b0a13b346a835fe894a3e277d16609c810a2688752f70081504951520"
 dependencies = [
- "borsh",
+ "borsh 0.9.3",
  "futures",
  "solana-banks-interface",
  "solana-program",
@@ -3315,7 +3330,7 @@ dependencies = [
 name = "solana-bpf-helloworld"
 version = "0.0.1"
 dependencies = [
- "borsh",
+ "borsh 1.5.3",
  "borsh-derive 0.10.4",
  "getrandom 0.2.15",
  "solana-program",
@@ -3622,7 +3637,7 @@ dependencies = [
  "bincode",
  "bitflags 1.3.2",
  "blake3",
- "borsh",
+ "borsh 0.9.3",
  "borsh-derive 0.9.3",
  "bs58",
  "bv",
@@ -3800,7 +3815,7 @@ dependencies = [
  "base64 0.13.1",
  "bincode",
  "bitflags 1.3.2",
- "borsh",
+ "borsh 0.9.3",
  "bs58",
  "bytemuck",
  "byteorder",
@@ -3930,7 +3945,7 @@ dependencies = [
  "Inflector",
  "base64 0.13.1",
  "bincode",
- "borsh",
+ "borsh 0.9.3",
  "bs58",
  "lazy_static",
  "log",
@@ -4079,7 +4094,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "16a33ecc83137583902c3e13c02f34151c8b2f2b74120f9c2b3ff841953e083d"
 dependencies = [
  "assert_matches",
- "borsh",
+ "borsh 0.9.3",
  "num-derive",
  "num-traits",
  "solana-program",
