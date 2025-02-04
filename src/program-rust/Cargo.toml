@@ -20,7 +20,7 @@ getrandom = { version = "0.2.2", features = ["custom"] }
 
 [dev-dependencies]
 solana-program-test = "~1.10.35"
-solana-sdk = "~1.10.35"
+solana-sdk = "~2.1.13"
 
 [lib]
 name = "helloworld"
